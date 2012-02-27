@@ -1,3 +1,11 @@
+#debugger
+snippet d
+	debugger;
+#
+snippet con
+	console.log({$1});
+snippet constr
+	console.log(JSON.stringify({$1}));
 # Prototype
 snippet proto
 	${1:class_name}.prototype.${2:method_name} =
@@ -11,7 +19,7 @@ snippet fun
 	}
 # Anonymous Function
 snippet f
-	function(${1}) {${2}};
+	function(${1}) {${2}}
 # if
 snippet if
 	if (${1:true}) {${2}}
